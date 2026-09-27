@@ -52,7 +52,7 @@ Every specialist responds to their **Character Name**, their **Compound Name** (
 
 | Colleague | Quick Call | Compound Call | Functional Title | What They Own & Enforce |
 | :--- | :--- | :--- | :--- | :--- |
-| **Sheldon** | **`/sheldon`** | **`/sheldon-orchestrator`** | **`/architect`** | **Master Orchestrator & Chief Architect.** When in doubt, call Sheldon. Analyzes goals, maps state machines in `CONTEXT.md`, runs Socratic decision trees (`/grill`), and delegates tasks. |
+| **Sheldon** | **`/sheldon`** | **`/sheldon-setup`** | **`/architect`** | **Master Orchestrator & Chief Architect.** Project setups (`/sheldon-setup`), system state machines, Socratic decision trees (`/grill`), token audits (`/sheldon-tokens`), and autonomous GitHub repo sync. |
 | **Leonard** | **`/leonard`** | **`/leonard-product`** | **`/product`** | **Senior Product Manager.** Bridges business desires into `/btt` specs, cuts scope creep (`/advise`), isolates "no-gos & rabbit holes", and writes Gherkin acceptance criteria. |
 | **Penny** | **`/penny`** | **`/penny-frontend`** | **`/frontend`** | **Senior UI/UX Architect.** Translates backend models into human interfaces. Enforces layout immunity (zero overlapping elements), the 5 UI states, 4/8px design tokens, and anti-AI-slop. |
 | **Howard** | **`/howard`** | **`/howard-backend`** | **`/backend` / `/db`** | **Senior Backend Engineer & DBA.** MIT engineer who builds high-concurrency APIs, atomic transactions, idempotency, foreign key indexes, and zero-downtime expand/contract migrations. |
