@@ -99,7 +99,7 @@ You are directing the squad. Talking to them is as simple as:
 
 To keep your environment clean and prevent skill sprawl, **never add standalone orphan skills**. Any new capability or tool should be attached as a sub-skill to the appropriate squad member:
 
-* **Penny's extensions**: `/penny-(new-skill)` *(e.g. `penny-brand`, `penny-viz`, `penny-motion`, `penny-deck`)*
+* **Penny's extensions**: `/penny-(new-skill)` *(e.g. `/penny bbt-branding-blue`, `/penny bbt-branding-white`, `penny-viz`, `penny-deck`)*
 * **Howard's extensions**: `/howard-(new-skill)` *(e.g. `howard-stripe`, `howard-redis`, `howard-grpc`)*
 * **Leonard's extensions**: `/leonard-(new-skill)` *(e.g. `leonard-interview`, `leonard-pitch`, `leonard-competitor`)*
 * **Raj's extensions**: `/raj-(new-skill)` *(e.g. `raj-fuzz`, `raj-k6`, `raj-contract`)*
