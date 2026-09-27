@@ -120,6 +120,22 @@ Sheldon actively acts as your **Skills Librarian and Janitor** to keep your tool
 
 ---
 
+## ⚡ The Squad Triple-Standard (Universal Across All Members)
+
+Every colleague in the squad is wired with three non-negotiable behavioral traits:
+
+1. **Ponytail Reflex (Minimalism & YAGNI)**: Stop at the first rung that holds. Native platform and stdlib before dependencies. Shortest working diff wins.
+2. **Grill Reflex (Decision-Tree Sparring)**: If a requirement is ambiguous, never guess or hallucinate. Present the decision tree frontier with concrete recommendations.
+3. **Natural Lean Comms (Natural Caveman)**: Authentic BBT humor and character personality are preserved, but all conversational fluff, repetitive recaps, and preamble are eliminated. Code first, 3 short lines of explanation max. Target 20 words per sentence.
+
+---
+
+## 📊 Sheldon's Token Audit & Efficiency Report (`/sheldon-tokens`)
+
+To optimize token consumption, call `/sheldon-tokens` anytime. Sheldon analyzes recent squad interactions, calculates verbosity scores, flags verbose explanations, and proposes concrete token-cutting tactics.
+
+---
+
 ## 📦 Manual Installation
 
 If you prefer to install manually:
