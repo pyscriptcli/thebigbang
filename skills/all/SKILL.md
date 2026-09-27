@@ -1,12 +1,6 @@
 ---
 name: all
-description: >
-  The All-Hands Engineering Meeting & Full Squad Consultation on the Big Bang Theory engineering squad.
-  Call everyone at once when Dave needs multi-perspective feedback, architectural brainstorming,
-  or a full sprint kickoff. Sheldon chairs the meeting, and each colleague (Leonard, Penny, Howard,
-  Raj, Bernadette, Amy) weighs in with their authentic character voices, quirks, and humor before
-  Sheldon synthesizes the final action plan for Dave. Use with `/all`, `@all`, `/all-hands`, "all",
-  "everyone", "team", "all hands".
+description: Caltech All-Hands Standup. Convenes all squad members (Sheldon, Leonard, Penny, Howard, Raj, Bernadette, Amy) for 360-degree feedback and planning. Use for /all, @all, "team", "squad", "all hands".
 argument-hint: "[topic or feature to discuss]"
 ---
 

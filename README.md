@@ -1,7 +1,7 @@
 # 💥 thebigbang
 
 > **The Big Bang Theory Engineering Squad for AI Coding Assistants.**  
-> *You are Tech Lead Dave. This is your autonomous Caltech software department.*
+> *You are Dave. This is your autonomous Caltech software department.*
 
 `thebigbang` turns your AI assistant (Google Antigravity, Claude Code, Cursor, Windsurf, OpenCode) into a high-functioning engineering squad modeled after the iconic Big Bang Theory characters.
 
@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/pyscriptcli/thebigbang/main/install
 
 ```
                           ┌────────────────────────────────────────────────────────┐
-                          │                 YOU: Tech Lead Dave                    │
+                          │                       YOU: Dave                        │
                           │        (Sets Objectives • Approves Architecture)       │
                           └───────────────────────────┬────────────────────────────┘
                                                       │
@@ -76,20 +76,20 @@ Standard AI coding assistants fail in predictable ways:
 
 ## 🚀 How to Run a Feature (Real-Life Flow)
 
-You are the Tech Lead. Directing your squad is as simple as talking to senior engineers:
+You are directing the squad. Talking to them is as simple as:
 
 ### 1. Planning with Leonard & Sheldon
-> **Tech Lead:** *"Sheldon, users need to invite teammates with custom roles. Orchestrate the squad."*  
-> **Sheldon:** *"Bazinga. Leonard (`/leonard-product`), draft the `/btt` spec and acceptance criteria."*  
+> **Dave:** *"Sheldon, users need to invite teammates with custom roles. Orchestrate the squad."*  
+> **Sheldon:** *"Bazinga. Leonard (`/leonard`), draft the spec and acceptance criteria."*  
 > **Leonard:** *"Done. Outlined the state machine (`Pending` $\rightarrow$ `Accepted` $\rightarrow$ `Revoked`) and isolated rabbit holes. Handing off to Howard and Penny."*
 
 ### 2. Building with Howard & Penny
-> **Tech Lead:** *"Howard, create the migration and endpoints. Penny, build the UI view."*  
+> **Dave:** *"Howard, create the migration and endpoints. Penny, build the UI view."*  
 > **Howard:** *"Migration created with unique index on `(org_id, email)` and atomic service transaction written."*  
 > **Penny:** *"Locked in Howard's API contract. Built the invitation table and side-sheet modal with matched skeleton loaders and zero absolute hacks."*
 
 ### 3. Verifying & Securing with Raj & Bernadette
-> **Tech Lead:** *"Raj, run QA. Bernadette, do a security sweep."*  
+> **Dave:** *"Raj, run QA. Bernadette, do a security sweep."*  
 > **Raj:** *"Seam-based TDD tests pass. Found one edge case with unicode emails; wrote a reproduction test and verified Howard's patch. Pruned 40 lines of AI dead code."*  
 > **Bernadette:** *"Checked the SQL queries. Tenant isolation is verified: unauthorized users cannot view cross-organization invites. Approved for deploy."*
 
@@ -114,7 +114,7 @@ To keep your environment clean and prevent skill sprawl, **never add standalone 
 Sheldon actively acts as your **Skills Librarian and Janitor** to keep your tools deduplicated:
 
 1. **Workflow Gap Detection:** When Sheldon notices you repeatedly doing a manual task, he will proactively speak up:  
-   > *"Tech Lead, observation: You've written manual branding tokens 3 times. We should create `/penny-brand`."*
+   > *"Dave, observation: You've written manual branding tokens 3 times. We should create `/penny-brand`."*
 2. **Skill Auditing (`/sheldon-clean` / `/sheldon-audit`):** Scans your environment for standalone or redundant skills outside the squad.
 3. **MANDATORY Authorization:** Sheldon **never** deletes or cleans up skills without your explicit consent. He will present a consolidation proposal (e.g. merging standalone skills into Penny or Howard) and ask for your `(Y/N)` approval first.
 
