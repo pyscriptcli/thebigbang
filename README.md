@@ -52,13 +52,13 @@ Every specialist responds to their **Character Name**, their **Compound Name** (
 
 | Colleague | Quick Call | Compound Call | Functional Title | What They Own & Enforce |
 | :--- | :--- | :--- | :--- | :--- |
-| **Dr. Sheldon Cooper** | **`/sheldon`** | **`/sheldon-orchestrator`** | **`/architect`** | **Master Orchestrator & Chief Architect.** When in doubt, call Sheldon. Analyzes goals, maps state machines in `CONTEXT.md`, runs Socratic decision trees (`/grill`), and delegates tasks. |
-| **Dr. Leonard Hofstadter** | **`/leonard`** | **`/leonard-product`** | **`/product`** | **Senior Product Manager.** Bridges business desires into `/btt` specs, cuts scope creep (`/advise`), isolates "no-gos & rabbit holes", and writes Gherkin acceptance criteria. |
+| **Sheldon** | **`/sheldon`** | **`/sheldon-orchestrator`** | **`/architect`** | **Master Orchestrator & Chief Architect.** When in doubt, call Sheldon. Analyzes goals, maps state machines in `CONTEXT.md`, runs Socratic decision trees (`/grill`), and delegates tasks. |
+| **Leonard** | **`/leonard`** | **`/leonard-product`** | **`/product`** | **Senior Product Manager.** Bridges business desires into `/btt` specs, cuts scope creep (`/advise`), isolates "no-gos & rabbit holes", and writes Gherkin acceptance criteria. |
 | **Penny** | **`/penny`** | **`/penny-frontend`** | **`/frontend`** | **Senior UI/UX Architect.** Translates backend models into human interfaces. Enforces layout immunity (zero overlapping elements), the 5 UI states, 4/8px design tokens, and anti-AI-slop. |
-| **Howard Wolowitz** | **`/howard`** | **`/howard-backend`** | **`/backend` / `/db`** | **Senior Backend Engineer & DBA.** MIT engineer who builds high-concurrency APIs, atomic transactions, idempotency, foreign key indexes, and zero-downtime expand/contract migrations. |
-| **Dr. Rajesh Koothrappali** | **`/raj`** | **`/raj-qa`** | **`/qa`** | **Senior QA & Bug Medic.** Observational perfectionist. Writes seam-based TDD tests (`/tdd`), mandates proof-first reproduction scripts (`/diagnose`), and prunes AI bloat (`/simplify`). |
-| **Dr. Bernadette Rostenkowski** | **`/bernadette`** | **`/bernadette-security`** | **`/security`** | **CISO & SecOps Lead.** Sweet on the outside, lethal on security. Enforces Zero-Trust (`/sentry`), verifies tenant isolation on every SQL query (no IDOR), and scrubs secret leaks. |
-| **Dr. Amy Farrah Fowler** | **`/amy`** | **`/amy-devops`** | **`/devops`** | **Platform, DevOps & SRE Lead.** Treats infrastructure like a nervous system: multi-stage Dockerfiles, GitHub Actions CI/CD, structured JSON logging (`/sre`), health probes, and telemetry. |
+| **Howard** | **`/howard`** | **`/howard-backend`** | **`/backend` / `/db`** | **Senior Backend Engineer & DBA.** MIT engineer who builds high-concurrency APIs, atomic transactions, idempotency, foreign key indexes, and zero-downtime expand/contract migrations. |
+| **Raj** | **`/raj`** | **`/raj-qa`** | **`/qa`** | **Senior QA & Bug Medic.** Observational perfectionist. Writes seam-based TDD tests (`/tdd`), mandates proof-first reproduction scripts (`/diagnose`), and prunes AI bloat (`/simplify`). |
+| **Bernadette** | **`/bernadette`** | **`/bernadette-security`** | **`/security`** | **CISO & SecOps Lead.** Sweet on the outside, lethal on security. Enforces Zero-Trust (`/sentry`), verifies tenant isolation on every SQL query (no IDOR), and scrubs secret leaks. |
+| **Amy** | **`/amy`** | **`/amy-devops`** | **`/devops`** | **Platform, DevOps & SRE Lead.** Treats infrastructure like a nervous system: multi-stage Dockerfiles, GitHub Actions CI/CD, structured JSON logging (`/sre`), health probes, and telemetry. |
 | **Autonomous Conductor** | **`/squad`** | **`/dispatch`** | **`/orchestrate`** | **Autonomous Subagent Conductor.** Dispatches parallel subagents to execute all tracks (DB, Backend, Frontend, QA) concurrently using Antigravity's subagent engine. |
 
 ---
@@ -91,6 +91,31 @@ You are the Tech Lead. Directing your squad is as simple as talking to senior en
 > **Tech Lead:** *"Raj, run QA. Bernadette, do a security sweep."*  
 > **Raj:** *"Seam-based TDD tests pass. Found one edge case with unicode emails; wrote a reproduction test and verified Howard's patch. Pruned 40 lines of AI dead code."*  
 > **Bernadette:** *"Checked the SQL queries. Tenant isolation is verified: unauthorized users cannot view cross-organization invites. Approved for deploy."*
+
+---
+
+## 🧩 Adding New Skills: The `<character>-(new-skill)` Pattern
+
+To keep your environment clean and prevent skill sprawl, **never add standalone orphan skills**. Any new capability or tool should be attached as a sub-skill to the appropriate squad member:
+
+* **Penny's extensions**: `/penny-(new-skill)` *(e.g. `penny-brand`, `penny-viz`, `penny-motion`, `penny-deck`)*
+* **Howard's extensions**: `/howard-(new-skill)` *(e.g. `howard-stripe`, `howard-redis`, `howard-grpc`)*
+* **Leonard's extensions**: `/leonard-(new-skill)` *(e.g. `leonard-interview`, `leonard-pitch`, `leonard-competitor`)*
+* **Raj's extensions**: `/raj-(new-skill)` *(e.g. `raj-fuzz`, `raj-k6`, `raj-contract`)*
+* **Bernadette's extensions**: `/bernadette-(new-skill)` *(e.g. `bernadette-soc2`, `bernadette-gdpr`)*
+* **Amy's extensions**: `/amy-(new-skill)` *(e.g. `amy-k8s`, `amy-terraform`, `amy-grafana`)*
+* **Sheldon's extensions**: `/sheldon-(new-skill)` *(e.g. `sheldon-cloud`, `sheldon-consensus`)*
+
+---
+
+## 🧹 Sheldon's Skill Librarian & Cleanup Protocol (`/sheldon-clean`)
+
+Sheldon actively acts as your **Skills Librarian and Janitor** to keep your tools deduplicated:
+
+1. **Workflow Gap Detection:** When Sheldon notices you repeatedly doing a manual task, he will proactively speak up:  
+   > *"Tech Lead, observation: You've written manual branding tokens 3 times. We should create `/penny-brand`."*
+2. **Skill Auditing (`/sheldon-clean` / `/sheldon-audit`):** Scans your environment for standalone or redundant skills outside the squad.
+3. **MANDATORY Authorization:** Sheldon **never** deletes or cleans up skills without your explicit consent. He will present a consolidation proposal (e.g. merging standalone skills into Penny or Howard) and ask for your `(Y/N)` approval first.
 
 ---
 
