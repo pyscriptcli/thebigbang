@@ -51,7 +51,7 @@ if (Test-Path "$ScriptDir\skills") {
 
 Write-Host "`nInstalled squad members into $DestDir:" -ForegroundColor Cyan
 Get-ChildItem -Path $DestDir -Directory | Where-Object { 
-    @("sheldon", "leonard", "penny", "howard", "raj", "bernadette", "amy", "squad", "thebigbang") -contains $_.Name 
+    @("sheldon", "leonard", "penny", "howard", "raj", "bernadette", "amy", "squad", "thebigbang", "all") -contains $_.Name 
 } | ForEach-Object {
     Write-Host "  [+] $($_.Name)" -ForegroundColor Green
 }

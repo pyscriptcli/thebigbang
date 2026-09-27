@@ -1,7 +1,7 @@
 # 💥 thebigbang
 
 > **The Big Bang Theory Engineering Squad for AI Coding Assistants.**  
-> *You are the Tech Lead. This is your autonomous Caltech software department.*
+> *You are Tech Lead Dave. This is your autonomous Caltech software department.*
 
 `thebigbang` turns your AI assistant (Google Antigravity, Claude Code, Cursor, Windsurf, OpenCode) into a high-functioning engineering squad modeled after the iconic Big Bang Theory characters.
 
@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/pyscriptcli/thebigbang/main/install
 
 ```
                           ┌────────────────────────────────────────────────────────┐
-                          │                    YOU: Tech Lead                      │
+                          │                 YOU: Tech Lead Dave                    │
                           │        (Sets Objectives • Approves Architecture)       │
                           └───────────────────────────┬────────────────────────────┘
                                                       │
@@ -59,6 +59,7 @@ Every specialist responds to their **Character Name**, their **Compound Name** (
 | **Raj** | **`/raj`** | **`/raj-qa`** | **`/qa`** | **Senior QA & Bug Medic.** Observational perfectionist. Writes seam-based TDD tests (`/tdd`), mandates proof-first reproduction scripts (`/diagnose`), and prunes AI bloat (`/simplify`). |
 | **Bernadette** | **`/bernadette`** | **`/bernadette-security`** | **`/security`** | **CISO & SecOps Lead.** Sweet on the outside, lethal on security. Enforces Zero-Trust (`/sentry`), verifies tenant isolation on every SQL query (no IDOR), and scrubs secret leaks. |
 | **Amy** | **`/amy`** | **`/amy-devops`** | **`/devops`** | **Platform, DevOps & SRE Lead.** Treats infrastructure like a nervous system: multi-stage Dockerfiles, GitHub Actions CI/CD, structured JSON logging (`/sre`), health probes, and telemetry. |
+| **All-Hands** | **`/all`** | **`@all`** | **`/all-hands`** | **The Caltech All-Hands Standup.** Summons the entire squad at once. Every colleague contributes their domain perspective before Sheldon synthesizes the final action plan for Dave. |
 | **Autonomous Conductor** | **`/squad`** | **`/dispatch`** | **`/orchestrate`** | **Autonomous Subagent Conductor.** Dispatches parallel subagents to execute all tracks (DB, Backend, Frontend, QA) concurrently using Antigravity's subagent engine. |
 
 ---

@@ -34,7 +34,7 @@ curl -fsSL "$REPO_URL/archive/refs/heads/main.tar.gz" | tar -xz -C "$TEMP_DIR"
 cp -rf "$TEMP_DIR/thebigbang-main/skills/"* "$DEST_DIR/"
 
 echo -e "\n\033[1;36mInstalled squad members into $DEST_DIR:\033[0m"
-for member in sheldon leonard penny howard raj bernadette amy squad thebigbang; do
+for member in sheldon leonard penny howard raj bernadette amy squad thebigbang all; do
     if [ -d "$DEST_DIR/$member" ]; then
         echo -e "  \033[0;32m[+] $member\033[0m"
     fi
